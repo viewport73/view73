@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{130F2B68-78A8-450C-BDAA-E3601BD8795F}</ProjectGuid>
+    <RootNamespace>Graphics</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>View73</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)View73;$(SolutionDir)View73\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>View73Includes.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)View73;$(SolutionDir)View73\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>View73Includes.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\View73;$(SolutionDir)\View73\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\View73;$(SolutionDir)\View73\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="View73BulletPhysics\View73ActorEnterExitTrigger.cpp" />
+    <ClCompile Include="View73BulletPhysics\View73CollisionDispatcher.cpp" />
+    <ClCompile Include="View73BulletPhysics\View73DynamicsWorld.cpp" />
+    <ClCompile Include="View73BulletPhysics\View73OnActorInsideTrigger.cpp" />
+    <ClCompile Include="View73BulletPhysics\View73Physics.cpp" />
+    <ClCompile Include="View73BulletPhysics\View73Trigger.cpp" />
+    <ClCompile Include="Physics2D\View73Collision2D.cpp" />
+    <ClCompile Include="Utils\View73File.cpp" />
+    <ClCompile Include="Utils\View73GeometryBinary.cpp" />
+    <ClCompile Include="Utils\View73LogManager.cpp" />
+    <ClCompile Include="Utils\View73LogOutputTargetOutputWindow.cpp" />
+    <ClCompile Include="Utils\View73ObjMeshLoader.cpp" />
+    <ClCompile Include="Utils\View73SkeletonBinary.cpp" />
+    <ClCompile Include="Utils\View73StringTokenizer.cpp" />
+    <ClCompile Include="Math\View73Matrix22.cpp" />
+    <ClCompile Include="Math\View73Matrix33.cpp" />
+    <ClCompile Include="Math\View73Matrix44.cpp" />
+    <ClCompile Include="Math\View73Quaternion.cpp" />
+    <ClCompile Include="Math\View73Vector2.cpp" />
+    <ClCompile Include="Math\View73Vector3.cpp" />
+    <ClCompile Include="Math\View73Vector4.cpp" />
+    <ClCompile Include="Graphics\View73BasicSceneManager.cpp" />
+    <ClCompile Include="Graphics\View73Bone.cpp" />
+    <ClCompile Include="Graphics\View73Camera.cpp" />
+    <ClCompile Include="Graphics\View73Colour.cpp" />
+    <ClCompile Include="Graphics\View73Frustrum.cpp" />
+    <ClCompile Include="Graphics\View73GraphicsRoot.cpp" />
+    <ClCompile Include="Graphics\View73Light.cpp" />
+    <ClCompile Include="Graphics\View73LightManager.cpp" />
+    <ClCompile Include="Graphics\View73Material.cpp" />
+    <ClCompile Include="Graphics\View73MaterialManager.cpp" />
+    <ClCompile Include="Graphics\View73Mesh.cpp" />
+    <ClCompile Include="Graphics\View73MeshManager.cpp" />
+    <ClCompile Include="Graphics\View73MeshModifier.cpp" />
+    <ClCompile Include="Graphics\View73Node.cpp" />
+    <ClCompile Include="Graphics\View73Overlay.cpp" />
+    <ClCompile Include="Graphics\View73OverlayFrustrum.cpp" />
+    <ClCompile Include="Graphics\View73OverlaySceneManager.cpp" />
+    <ClCompile Include="Graphics\View73OverlayScreen.cpp" />
+    <ClCompile Include="Graphics\View73SceneManager.cpp" />
+    <ClCompile Include="Graphics\View73SceneNode.cpp" />
+    <ClCompile Include="Graphics\View73Skeleton.cpp" />
+    <ClCompile Include="Graphics\View73SkeletonManager.cpp" />
+    <ClCompile Include="Graphics\View73SubMesh.cpp" />
+    <ClCompile Include="Graphics\View73Viewport.cpp" />
+    <ClCompile Include="Graphics\View73AutoShaderParameter.cpp" />
+    <ClCompile Include="Graphics\View73FragmentProgram.cpp" />
+    <ClCompile Include="Graphics\View73ShaderEffect.cpp" />
+    <ClCompile Include="Graphics\View73ShaderEffectInstance.cpp" />
+    <ClCompile Include="Graphics\View73ShaderManager.cpp" />
+    <ClCompile Include="Graphics\View73ShaderParameter.cpp" />
+    <ClCompile Include="Graphics\View73ShaderPass.cpp" />
+    <ClCompile Include="Graphics\View73ShaderProgram.cpp" />
+    <ClCompile Include="Graphics\View73ShaderTechnique.cpp" />
+    <ClCompile Include="Graphics\View73VertexProgram.cpp" />
+    <ClCompile Include="GameComponents\View73ActorManager.cpp" />
+    <ClCompile Include="GameComponents\View73ActorOrToken.cpp" />
+    <ClCompile Include="GameComponents\View73Car.cpp" />
+    <ClCompile Include="GameComponents\View73Character.cpp" />
+    <ClCompile Include="GameComponents\View73ControllerManager.cpp" />
+    <ClCompile Include="GameComponents\View73NavMesh.cpp" />
+    <ClCompile Include="GameComponents\View73PlayerCharacterController.cpp" />
+    <ClCompile Include="GameComponents\View73SimpleStateMachine.cpp" />
+    <ClCompile Include="Components\View73DefaultInputSystem.cpp" />
+    <ClCompile Include="Components\View73Event.cpp" />
+    <ClCompile Include="Components\View73InputManager.cpp" />
+    <ClCompile Include="Components\View73InputMethodKey.cpp" />
+    <ClCompile Include="Components\View73InputSystem.cpp" />
+    <ClCompile Include="Components\View73RigidBodyToNodeTransformer.cpp" />
+    <ClCompile Include="Components\View73TransformerManager.cpp" />
+    <ClCompile Include="Bullet\LinearMath\btAlignedAllocator.cpp" />
+    <ClCompile Include="Bullet\LinearMath\btConvexHull.cpp" />
+    <ClCompile Include="Bullet\LinearMath\btGeometryUtil.cpp" />
+    <ClCompile Include="Bullet\LinearMath\btQuickprof.cpp" />
+    <ClCompile Include="Bullet\LinearMath\btSerializer.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btDefaultSoftBodySolver.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btSoftBody.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btSoftBodyHelpers.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btSoftRigidCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btSoftRigidDynamicsWorld.cpp" />
+    <ClCompile Include="Bullet\BulletSoftBody\btSoftSoftCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Character\btKinematicCharacterController.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Vehicle\btRaycastVehicle.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Vehicle\btWheelInfo.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btContactConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Dynamics\btContinuousDynamicsWorld.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Dynamics\btRigidBody.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp" />
+    <ClCompile Include="Bullet\BulletDynamics\Dynamics\Bullet-C-API.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btAxisSweep3.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btBroadphaseProxy.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btDbvt.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btDbvtBroadphase.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btDispatcher.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btOverlappingPairCache.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btQuantizedBvh.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\BroadphaseCollision\btSimpleBroadphase.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btConvexCast.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkEpa2.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btRaycastCallback.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btBoxBoxDetector.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btCollisionDispatcher.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btCollisionObject.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btCollisionWorld.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btGhostObject.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btInternalEdgeUtility.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btManifoldResult.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btSimulationIslandManager.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\btUnionFind.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionDispatch\SphereTriangleDetector.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btBox2dShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btBoxShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btCapsuleShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btCollisionShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btCompoundShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConcaveShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConeShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConvex2dShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConvexHullShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConvexInternalShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConvexPointCloudShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConvexShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btCylinderShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btEmptyShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btMinkowskiSumShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btMultiSphereShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btOptimizedBvh.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btPolyhedralConvexShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btShapeHull.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btSphereShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btStaticPlaneShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btStridingMeshInterface.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btTetrahedronShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btTriangleBuffer.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btTriangleCallback.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btTriangleMesh.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btTriangleMeshShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\CollisionShapes\btUniformScalingShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\btContactProcessing.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\btGenericPoolAllocator.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\btGImpactBvh.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\btGImpactQuantizedBvh.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\btGImpactShape.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\btTriangleShapeEx.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\gim_box_set.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\gim_contact.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\gim_memory.cpp" />
+    <ClCompile Include="Bullet\BulletCollision\Gimpact\gim_tri_collision.cpp" />
+    <ClCompile Include="View73ApplicationRoot.cpp" />
+    <ClCompile Include="Glew\glew.c" />
+    <ClCompile Include="Debug\View73DebugScene.cpp" />
+    <ClCompile Include="Debug\View73GLDebugDrawer.cpp" />
+    <ClCompile Include="Debug\View73PhysicsDebugObject.cpp" />
+    <ClCompile Include="Debug\View73SkeletonDebugObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="View73BulletPhysics\View73ActorEnterExitTrigger.h" />
+    <ClInclude Include="View73BulletPhysics\View73BulletTypes.h" />
+    <ClInclude Include="View73BulletPhysics\View73BulletUtils.h" />
+    <ClInclude Include="View73BulletPhysics\View73Clock.h" />
+    <ClInclude Include="View73BulletPhysics\View73CollisionDispatcher.h" />
+    <ClInclude Include="View73BulletPhysics\View73DynamicsWorld.h" />
+    <ClInclude Include="View73BulletPhysics\View73OnActorInsideTrigger.h" />
+    <ClInclude Include="View73BulletPhysics\View73Physics.h" />
+    <ClInclude Include="View73BulletPhysics\View73Trigger.h" />
+    <ClInclude Include="Physics2D\View73BoxShape2D.h" />
+    <ClInclude Include="Physics2D\View73CircleShape2D.h" />
+    <ClInclude Include="Physics2D\View73Collision2D.h" />
+    <ClInclude Include="Physics2D\View73Shape2D.h" />
+    <ClInclude Include="Physics2D\View73ShapeList2D.h" />
+    <ClInclude Include="Utils\View73BulletView73Conversion.h" />
+    <ClInclude Include="Utils\View73CharacterUtils.h" />
+    <ClInclude Include="Utils\View73File.h" />
+    <ClInclude Include="Utils\View73Flag.h" />
+    <ClInclude Include="Utils\View73GeometryBinary.h" />
+    <ClInclude Include="Utils\View73LogManager.h" />
+    <ClInclude Include="Utils\View73LogOutputTarget.h" />
+    <ClInclude Include="Utils\View73LogOutputTargetOutputWindow.h" />
+    <ClInclude Include="Utils\View73ObjMeshLoader.h" />
+    <ClInclude Include="Utils\View73SkeletonBinary.h" />
+    <ClInclude Include="Utils\View73String.h" />
+    <ClInclude Include="Utils\View73StringTokenizer.h" />
+    <ClInclude Include="Math\View73AxisAlignedBox3.h" />
+    <ClInclude Include="Math\View73MathConstants.h" />
+    <ClInclude Include="Math\View73MathUtils.h" />
+    <ClInclude Include="Math\View73Matrix22.h" />
+    <ClInclude Include="Math\View73Matrix33.h" />
+    <ClInclude Include="Math\View73Matrix44.h" />
+    <ClInclude Include="Math\View73Quaternion.h" />
+    <ClInclude Include="Math\View73Rect.h" />
+    <ClInclude Include="Math\View73Vector2.h" />
+    <ClInclude Include="Math\View73Vector3.h" />
+    <ClInclude Include="Math\View73Vector4.h" />
+    <ClInclude Include="Graphics\View73BasicSceneManager.h" />
+    <ClInclude Include="Graphics\View73Bone.h" />
+    <ClInclude Include="Graphics\View73Camera.h" />
+    <ClInclude Include="Graphics\View73Colour.h" />
+    <ClInclude Include="Graphics\View73FactoryObjectRegister.h" />
+    <ClInclude Include="Graphics\View73FrameEvent.h" />
+    <ClInclude Include="Graphics\View73Frustrum.h" />
+    <ClInclude Include="Graphics\View73GLError.h" />
+    <ClInclude Include="Graphics\View73GlInclude.h" />
+    <ClInclude Include="Graphics\View73GraphicsRoot.h" />
+    <ClInclude Include="Graphics\View73Light.h" />
+    <ClInclude Include="Graphics\View73LightManager.h" />
+    <ClInclude Include="Graphics\View73Material.h" />
+    <ClInclude Include="Graphics\View73MaterialManager.h" />
+    <ClInclude Include="Graphics\View73Mesh.h" />
+    <ClInclude Include="Graphics\View73MeshInstance.h" />
+    <ClInclude Include="Graphics\View73MeshManager.h" />
+    <ClInclude Include="Graphics\View73MeshModifier.h" />
+    <ClInclude Include="Graphics\View73Node.h" />
+    <ClInclude Include="Graphics\View73OnRenderListener.h" />
+    <ClInclude Include="Graphics\View73Overlay.h" />
+    <ClInclude Include="Graphics\View73OverlayFrustrum.h" />
+    <ClInclude Include="Graphics\View73OverlaySceneManager.h" />
+    <ClInclude Include="Graphics\View73OverlayScreen.h" />
+    <ClInclude Include="Graphics\View73Renderable.h" />
+    <ClInclude Include="Graphics\View73SceneManager.h" />
+    <ClInclude Include="Graphics\View73SceneNode.h" />
+    <ClInclude Include="Graphics\View73Skeleton.h" />
+    <ClInclude Include="Graphics\View73SkeletonInstance.h" />
+    <ClInclude Include="Graphics\View73SkeletonManager.h" />
+    <ClInclude Include="Graphics\View73SubMesh.h" />
+    <ClInclude Include="Graphics\View73Viewport.h" />
+    <ClInclude Include="Graphics\View73AutoShaderParameter.h" />
+    <ClInclude Include="Graphics\View73FragmentProgram.h" />
+    <ClInclude Include="Graphics\View73ShaderEffect.h" />
+    <ClInclude Include="Graphics\View73ShaderEffectInstance.h" />
+    <ClInclude Include="Graphics\View73ShaderManager.h" />
+    <ClInclude Include="Graphics\View73ShaderParameter.h" />
+    <ClInclude Include="Graphics\View73ShaderPass.h" />
+    <ClInclude Include="Graphics\View73ShaderProgram.h" />
+    <ClInclude Include="Graphics\View73ShaderTechnique.h" />
+    <ClInclude Include="Graphics\View73VertexProgram.h" />
+    <ClInclude Include="GameComponents\View73Actor.h" />
+    <ClInclude Include="GameComponents\View73ActorManager.h" />
+    <ClInclude Include="GameComponents\View73ActorOrToken.h" />
+    <ClInclude Include="GameComponents\View73Car.h" />
+    <ClInclude Include="GameComponents\View73CarType.h" />
+    <ClInclude Include="GameComponents\View73Character.h" />
+    <ClInclude Include="GameComponents\View73Controller.h" />
+    <ClInclude Include="GameComponents\View73ControllerManager.h" />
+    <ClInclude Include="GameComponents\View73NavMesh.h" />
+    <ClInclude Include="GameComponents\View73PlayerCharacterController.h" />
+    <ClInclude Include="GameComponents\View73SimpleStateMachine.h" />
+    <ClInclude Include="Components\View73Animation.h" />
+    <ClInclude Include="Components\View73Command.h" />
+    <ClInclude Include="Components\View73DefaultInputSystem.h" />
+    <ClInclude Include="Components\View73Event.h" />
+    <ClInclude Include="Components\View73FunctionExecuterCommand.h" />
+    <ClInclude Include="Components\View73InputBinding.h" />
+    <ClInclude Include="Components\View73InputManager.h" />
+    <ClInclude Include="Components\View73InputMethod.h" />
+    <ClInclude Include="Components\View73InputMethodAxis.h" />
+    <ClInclude Include="Components\View73InputMethodKey.h" />
+    <ClInclude Include="Components\View73InputMethodKeyListener.h" />
+    <ClInclude Include="Components\View73InputSystem.h" />
+    <ClInclude Include="Components\View73RigidBodyToNodeTransformer.h" />
+    <ClInclude Include="Components\View73Transformer.h" />
+    <ClInclude Include="Components\View73TransformerManager.h" />
+    <ClInclude Include="Bullet\btBulletCollisionCommon.h" />
+    <ClInclude Include="Bullet\btBulletDynamicsCommon.h" />
+    <ClInclude Include="Bullet\Bullet-C-Api.h" />
+    <ClInclude Include="Bullet\vectormath\vmInclude.h" />
+    <ClInclude Include="Bullet\vectormath\sse\boolInVec.h" />
+    <ClInclude Include="Bullet\vectormath\sse\floatInVec.h" />
+    <ClInclude Include="Bullet\vectormath\sse\mat_aos.h" />
+    <ClInclude Include="Bullet\vectormath\sse\quat_aos.h" />
+    <ClInclude Include="Bullet\vectormath\sse\vec_aos.h" />
+    <ClInclude Include="Bullet\vectormath\sse\vecidx_aos.h" />
+    <ClInclude Include="Bullet\vectormath\sse\vectormath_aos.h" />
+    <ClInclude Include="Bullet\vectormath\scalar\boolInVec.h" />
+    <ClInclude Include="Bullet\vectormath\scalar\floatInVec.h" />
+    <ClInclude Include="Bullet\vectormath\scalar\mat_aos.h" />
+    <ClInclude Include="Bullet\vectormath\scalar\quat_aos.h" />
+    <ClInclude Include="Bullet\vectormath\scalar\vec_aos.h" />
+    <ClInclude Include="Bullet\vectormath\scalar\vectormath_aos.h" />
+    <ClInclude Include="Bullet\LinearMath\btAabbUtil2.h" />
+    <ClInclude Include="Bullet\LinearMath\btAlignedAllocator.h" />
+    <ClInclude Include="Bullet\LinearMath\btAlignedObjectArray.h" />
+    <ClInclude Include="Bullet\LinearMath\btConvexHull.h" />
+    <ClInclude Include="Bullet\LinearMath\btDefaultMotionState.h" />
+    <ClInclude Include="Bullet\LinearMath\btGeometryUtil.h" />
+    <ClInclude Include="Bullet\LinearMath\btHashMap.h" />
+    <ClInclude Include="Bullet\LinearMath\btIDebugDraw.h" />
+    <ClInclude Include="Bullet\LinearMath\btList.h" />
+    <ClInclude Include="Bullet\LinearMath\btMatrix3x3.h" />
+    <ClInclude Include="Bullet\LinearMath\btMinMax.h" />
+    <ClInclude Include="Bullet\LinearMath\btMotionState.h" />
+    <ClInclude Include="Bullet\LinearMath\btPoolAllocator.h" />
+    <ClInclude Include="Bullet\LinearMath\btQuadWord.h" />
+    <ClInclude Include="Bullet\LinearMath\btQuaternion.h" />
+    <ClInclude Include="Bullet\LinearMath\btQuickprof.h" />
+    <ClInclude Include="Bullet\LinearMath\btRandom.h" />
+    <ClInclude Include="Bullet\LinearMath\btScalar.h" />
+    <ClInclude Include="Bullet\LinearMath\btSerializer.h" />
+    <ClInclude Include="Bullet\LinearMath\btStackAlloc.h" />
+    <ClInclude Include="Bullet\LinearMath\btTransform.h" />
+    <ClInclude Include="Bullet\LinearMath\btTransformUtil.h" />
+    <ClInclude Include="Bullet\LinearMath\btVector3.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btDefaultSoftBodySolver.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftBody.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftBodyHelpers.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftBodyInternals.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftBodySolvers.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftBodySolverVertexBuffer.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftRigidCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftRigidDynamicsWorld.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSoftSoftCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletSoftBody\btSparseSDF.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Character\btCharacterControllerInterface.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Character\btKinematicCharacterController.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Vehicle\btRaycastVehicle.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Vehicle\btVehicleRaycaster.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Vehicle\btWheelInfo.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btConeTwistConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btConstraintSolver.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btContactConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btContactSolverInfo.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btHinge2Constraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btHingeConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btJacobianEntry.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btSliderConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btSolverBody.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btSolverConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btTypedConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\ConstraintSolver\btUniversalConstraint.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Dynamics\btActionInterface.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Dynamics\btContinuousDynamicsWorld.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Dynamics\btDynamicsWorld.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Dynamics\btRigidBody.h" />
+    <ClInclude Include="Bullet\BulletDynamics\Dynamics\btSimpleDynamicsWorld.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btAxisSweep3.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btBroadphaseInterface.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btBroadphaseProxy.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btDbvt.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btDbvtBroadphase.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btDispatcher.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btOverlappingPairCache.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btOverlappingPairCallback.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btQuantizedBvh.h" />
+    <ClInclude Include="Bullet\BulletCollision\BroadphaseCollision\btSimpleBroadphase.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btConvexCast.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btConvexPenetrationDepthSolver.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btDiscreteCollisionDetectorInterface.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkEpa2.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btManifoldPoint.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btPersistentManifold.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btPointCollector.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btRaycastCallback.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btSimplexSolverInterface.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.h" />
+    <ClInclude Include="Bullet\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btBoxBoxDetector.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btCollisionConfiguration.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btCollisionCreateFunc.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btCollisionDispatcher.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btCollisionObject.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btCollisionWorld.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btGhostObject.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btInternalEdgeUtility.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btManifoldResult.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btSimulationIslandManager.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\btUnionFind.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionDispatch\SphereTriangleDetector.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btBox2dShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btBoxShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btCapsuleShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btCollisionMargin.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btCollisionShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btCompoundShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConcaveShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConeShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConvex2dShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConvexHullShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConvexInternalShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConvexPointCloudShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConvexShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btCylinderShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btEmptyShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btMaterial.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btMinkowskiSumShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btMultiSphereShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btOptimizedBvh.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btPolyhedralConvexShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btShapeHull.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btSphereShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btStaticPlaneShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btStridingMeshInterface.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTetrahedronShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleBuffer.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleCallback.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleInfoMap.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleMesh.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleMeshShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btTriangleShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\CollisionShapes\btUniformScalingShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btBoxCollision.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btClipPolygon.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btContactProcessing.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btGenericPoolAllocator.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btGeometryOperations.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btGImpactBvh.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btGImpactMassUtil.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btGImpactQuantizedBvh.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btGImpactShape.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btQuantization.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\btTriangleShapeEx.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_array.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_basic_geometry_operations.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_bitset.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_box_collision.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_box_set.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_clip_polygon.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_contact.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_geom_types.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_geometry.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_hash_table.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_linear_math.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_math.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_memory.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_radixsort.h" />
+    <ClInclude Include="Bullet\BulletCollision\Gimpact\gim_tri_collision.h" />
+    <ClInclude Include="View73Application.h" />
+    <ClInclude Include="View73ApplicationRoot.h" />
+    <ClInclude Include="Glew\glew.h" />
+    <ClInclude Include="Glew\glxew.h" />
+    <ClInclude Include="Glew\wglew.h" />
+    <ClInclude Include="Debug\View73DebugDrawer.h" />
+    <ClInclude Include="Debug\View73DebugObject.h" />
+    <ClInclude Include="Debug\View73DebugScene.h" />
+    <ClInclude Include="Debug\View73GLDebugDrawer.h" />
+    <ClInclude Include="Debug\View73PhysicsDebugObject.h" />
+    <ClInclude Include="Debug\View73SkeletonDebugObject.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
