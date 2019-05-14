@@ -19,9 +19,6 @@ namespace View73
 	{
 		TSharedSceneNodePtr node = GetSceneNode(_name);
 
-		BOOST_ASSERT_MSG(node == NULL , ("SceneNode named " + node->GetName() 
-			+ " already exists" ).CString() );
-
 		if(node == NULL)
 		{
 			node.reset(new SceneNode(_name));
@@ -55,7 +52,7 @@ namespace View73
 	{
 		TSharedSceneNodePtr node = GetSceneNode(_childName);
 
-		BOOST_ASSERT_MSG(node == NULL , ("SceneNode named " + node->GetName() + " already exists" ).CString() );
+		//BOOST_ASSERT_MSG(node == NULL , ("SceneNode named " + node->GetName() + " already exists" ).CString() );
 		if(node == NULL)
 		{
 			node.reset(new SceneNode(_childName));

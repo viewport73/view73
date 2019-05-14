@@ -10,7 +10,7 @@
 
 #include "../Math/View73Vector3.h"
 #include "../Utils/View73String.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include <list>
 
 namespace View73

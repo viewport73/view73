@@ -13,7 +13,7 @@
 #include "../Math/View73Quaternion.h"
 #include <list>
 #include "../Utils/View73String.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "../Utils/View73LogManager.h"
 
 namespace View73

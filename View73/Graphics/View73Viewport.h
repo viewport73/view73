@@ -8,7 +8,7 @@
 #ifndef __View73Viewport_h__
 #define __View73Viewport_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "View73Colour.h"
 #include <list>
 #include "View73Camera.h"

@@ -8,7 +8,7 @@
 #ifndef __View73Actor_h__
 #define __View73Actor_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include <boost/function.hpp>
 #include "../Graphics/View73FrameEvent.h"
 #include "../Math/View73Vector3.h"

@@ -62,9 +62,6 @@ namespace View73
 	{
 		TDynamicsWorldSharedPtr found = GetWorld(_name);
 
-		BOOST_ASSERT_MSG(found == NULL, (String("World named ") + found->GetName()
-						+ " already exists, choose different name" ).CString() );
-
 		if(found == NULL)
 		{
 			found.reset(new DynamicsWorld(_name,_worldType));

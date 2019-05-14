@@ -22,7 +22,7 @@ namespace View73
 	typedef boost::weak_ptr<Skeleton> TSkeletonWeakPtr;
 
 	typedef std::list<TSharedSkeletonPtr> TSharedSkeletonPtrList;
-	typedef std::map<const String,TSharedSkeletonPtr> TSharedSkeletonMap;
+	typedef std::map<String,TSharedSkeletonPtr> TSharedSkeletonMap;
 
 	class Skeleton
 	{

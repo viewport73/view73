@@ -31,9 +31,6 @@ namespace View73
 	{
 		TSharedFrustrumPtr camera = GetCamera(_name);
 
-		BOOST_ASSERT_MSG(camera == NULL , (String("Camera named ") + camera->GetName() 
-			+ String(" already exists") ).CString() );
-
 		if(camera == NULL)
 		{
 			camera = _fun(_name,_projType,_sceneManager);

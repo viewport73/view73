@@ -8,7 +8,7 @@
 #ifndef __View73MeshManager_h__
 #define __View73MeshManager_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include <boost/function.hpp>
 #include "View73Mesh.h"
 

@@ -8,7 +8,7 @@
 #ifndef __View73Renderable_h__
 #define __View73Renderable_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include <list>
 
 namespace View73

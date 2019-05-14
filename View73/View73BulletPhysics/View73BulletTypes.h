@@ -8,7 +8,7 @@
 #ifndef __View73BulletTypes_h__
 #define __View73BulletTypes_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "btBulletCollisionCommon.h"
 #include "btBulletDynamicsCommon.h"
 #include "BulletDynamics/Character/btKinematicCharacterController.h"

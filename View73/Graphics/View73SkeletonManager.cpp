@@ -50,7 +50,7 @@ namespace View73
 			}
 
 			TSharedSkeletonPtr newSkeleton(new Skeleton(_skeletonName));
-			m_SkeletonMap.insert(std::pair<const String,TSharedSkeletonPtr>(newSkeleton->GetName(),newSkeleton));
+			m_SkeletonMap.insert(std::pair<String,TSharedSkeletonPtr>(newSkeleton->GetName(),newSkeleton));
 
 			return newSkeleton;
 		}

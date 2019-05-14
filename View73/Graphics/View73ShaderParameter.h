@@ -9,7 +9,7 @@
 #define __View73ShaderParameter_h__
 
 #include "../Math/View73Matrix44.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "../Utils/View73String.h"
 #include <list>
 

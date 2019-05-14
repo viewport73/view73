@@ -8,7 +8,7 @@
 #ifndef __View73InputMethodKeyListener_h__
 #define __View73InputMethodKeyListener_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace View73
 {

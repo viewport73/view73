@@ -8,7 +8,7 @@
 #ifndef __View73Transformer_h__
 #define __View73Transformer_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "../Graphics/View73FrameEvent.h"
 
 namespace View73

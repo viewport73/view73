@@ -8,6 +8,8 @@
 #ifndef __GameCarController_h__
 #define __GameCarController_h__
 
+#include <boost\make_shared.hpp>
+
 #include "../View73/GameComponents/View73Controller.h"
 #include "../View73/Components/View73InputMethodKeyListener.h"
 #include "../View73/GameComponents/View73Car.h"

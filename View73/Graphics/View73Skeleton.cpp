@@ -2,8 +2,8 @@
 
 namespace
 {
-	typedef std::vector<const View73::Skeleton::BoneInfo* const> TBoneInfoArray;
-	typedef std::map<const View73::String,const View73::Skeleton::BoneInfo* const> TBoneInfoMap;//String key is name of the bone;
+	typedef std::vector<View73::Skeleton::BoneInfo*> TBoneInfoArray;
+	typedef std::map<View73::String, View73::Skeleton::BoneInfo*> TBoneInfoMap;//String key is name of the bone;
 	typedef std::vector<unsigned int> TBoneIndexArray;
 	typedef std::vector<TBoneIndexArray> TChildBoneArray;
 
@@ -248,7 +248,7 @@ namespace View73
 		
 		m_Impl->m_BoneInfoArray.push_back(newBoneInfo);
 		m_Impl->m_ChildBoneIdArray.push_back(TBoneIndexArray());
-		m_Impl->m_BoneMap.insert(std::pair<const String,const BoneInfo* const>(newBoneInfo->m_Name,newBoneInfo));
+		m_Impl->m_BoneMap.insert(std::pair<String, BoneInfo* const>(newBoneInfo->m_Name,newBoneInfo));
 		
 		return index;
 	}

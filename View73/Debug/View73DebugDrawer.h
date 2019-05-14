@@ -12,7 +12,7 @@
 #include "../Graphics/View73Colour.h"
 #include "../Math/View73AxisAlignedBox3.h"
 #include "../Utils/View73String.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "../Bullet/LinearMath/btIDebugDraw.h"
 
 namespace View73

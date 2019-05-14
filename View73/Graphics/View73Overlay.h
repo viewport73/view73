@@ -11,7 +11,7 @@
 #include "View73Renderable.h"
 #include "View73Mesh.h"
 #include "View73Material.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace View73
 {

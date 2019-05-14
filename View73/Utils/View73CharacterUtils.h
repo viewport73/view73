@@ -8,8 +8,8 @@
 #ifndef __View73Utils_h__
 #define __View73Utils_h__
 
-#include "../boost/foreach.hpp"
-#include "../boost/tokenizer.hpp"
+#include "../boost/boost/foreach.hpp"
+#include "../boost/boost/tokenizer.hpp"
 
 namespace View73
 {

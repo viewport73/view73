@@ -1,5 +1,5 @@
 #include "View73StringTokenizer.h"
-#include "../boost/tokenizer.hpp"
+#include "../boost/boost/tokenizer.hpp"
 
 namespace View73
 {

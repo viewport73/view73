@@ -8,7 +8,7 @@
 #ifndef __View73MaterialManager_h__
 #define __View73MaterialManager_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include <list>
 #include "View73Material.h"
 

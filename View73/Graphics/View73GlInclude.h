@@ -12,7 +12,7 @@
 #include <windows.h>
 #endif
 
-#include "../Glew/glew.h"
+#include <GL\glew.h>
 #include <gl\gl.h>	
 
 #endif

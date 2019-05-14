@@ -10,7 +10,7 @@
 
 #include <list>
 #include <vector>
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "View73ShaderParameter.h"
 
 namespace View73

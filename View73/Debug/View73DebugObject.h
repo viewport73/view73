@@ -8,7 +8,7 @@
 #ifndef __View73DebugObject_h__
 #define __View73DebugObject_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include <list>
 #include "View73DebugDrawer.h"
 #include "../Graphics/View73Frustrum.h"

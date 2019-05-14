@@ -10,7 +10,7 @@
 
 #include <list>
 #include "View73Skeleton.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace View73
 {

@@ -9,7 +9,7 @@
 #define __View73Material_h__
 
 #include "../Utils/View73String.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "View73ShaderEffectInstance.h"
 
 namespace View73

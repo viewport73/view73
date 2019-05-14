@@ -10,7 +10,7 @@
 
 #include "../View73/Components/View73InputMethodKey.h"
 #include "../NeHeGL.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "GameInputKeys.h"
 
 namespace Game

@@ -13,7 +13,7 @@
 #include "View73GLError.h"
 #include <list>
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace View73
 {

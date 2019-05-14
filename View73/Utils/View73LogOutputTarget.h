@@ -8,7 +8,7 @@
 #ifndef __View73LogOutputTarget_h__
 #define __View73LogOutputTarget_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include "View73String.h"
 
 namespace View73

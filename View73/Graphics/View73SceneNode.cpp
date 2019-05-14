@@ -5,6 +5,7 @@ namespace View73
 	//===============================================================================
 	SceneNode::SceneNode(const String& _nodeName, bool _overrideParentTransforms)
 		: Node(eNT_SceneNode,_nodeName,_overrideParentTransforms)
+		, m_AllRenderables(NULL)
 	{
 	}
 	

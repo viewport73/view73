@@ -8,7 +8,7 @@
 #ifndef __View73GraphicsRoot_h__
 #define __View73GraphicsRoot_h__
 
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 #include <list>
 #include <map>
 #include "View73SceneManager.h"
@@ -21,7 +21,7 @@ namespace View73
 	public:
 		
 		typedef TSharedSceneManagerPtr (*SceneManagerCreatorFunc)(const String& _name);
-		typedef std::map<const String,SceneManagerCreatorFunc> TRegisteredSceneManagerCreators;
+		typedef std::map<String,SceneManagerCreatorFunc> TRegisteredSceneManagerCreators;
 
 	private:
 

@@ -9,7 +9,7 @@
 #define __View73Trigger_h__
 
 #include "View73BulletTypes.h"
-#include "../boost/smart_ptr.hpp"
+#include <boost/smart_ptr.hpp>
 
 namespace View73
 {

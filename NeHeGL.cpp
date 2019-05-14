@@ -225,7 +225,7 @@ BOOL DestroyWindowGL (GL_Window* window)								// Destroy The OpenGL Window & R
 LRESULT CALLBACK WindowProc (HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	// Get The Window Context
-	GL_Window* window = (GL_Window*)(GetWindowLong (hWnd, GWL_USERDATA));
+	GL_Window* window = (GL_Window*)(GetWindowLongPtr (hWnd, GWLP_USERDATA));
 
 	switch (uMsg)														// Evaluate Window Message
 	{
@@ -245,7 +245,7 @@ LRESULT CALLBACK WindowProc (HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		{
 			CREATESTRUCT* creation = (CREATESTRUCT*)(lParam);			// Store Window Structure Pointer
 			window = (GL_Window*)(creation->lpCreateParams);
-			SetWindowLong (hWnd, GWL_USERDATA, (LONG)(window));
+			SetWindowLongPtr (hWnd, GWLP_USERDATA, (LONG_PTR)(window));
 		}
 		return 0;														// Return
 
